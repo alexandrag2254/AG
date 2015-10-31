@@ -1,0 +1,63 @@
+<html ng-app='application'>
+<head>
+	<title>GradeA</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<!-- materialize icons used in login and registration -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular-resource.min.js"></script>
+
+    <!-- requiring the angular page -->
+    <script type="text/javascript" src="angular/angular.js"> </script>
+    <!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	
+	<nav class="navbar">
+
+		<div class="header">
+			<!-- <h2 style="color:white;"> Blockchain </h2> -->
+			<h3 id="title">GradeA</h3>
+			<!-- logo -->
+			<!-- <img src=""> -->
+
+			<!-- <div class="text-right" class="header">
+				<span ng-show="id">  
+					<a href="#/user_dock">Back to Calendar</a> |
+					<a href="#/your_profile">Your Profile</a> |
+					<a href="#/logout" ng-click="logout()" >Logout</a>
+				</span>
+			</div> -->
+		
+		</div>
+
+	</nav>
+
+	<div class="col s12">
+		<div class='row'>
+			<!--partials will be here -->
+			<div ng-view=""></div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div id="footer">
+	      <div id="left_footer">
+	        <span> <a href="mailto:info@blockchainu.co">info@gradea.co</a> </span> 
+	      
+	    </div>
+	    <div id="right_footer">
+	        <span>&copy; GradeA </span>
+	    </div>
+   </div>
+
+</body>
+
+</html>

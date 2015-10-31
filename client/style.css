@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,100,200,300,500,600,700,800,900);
+
+html {
+	width:100%;
+	margin:0 auto;
+	font-family: 'Arvo';
+}
+
+#register{
+	margin-left: 25%;
+}
+
+#admin_login {
+	margin-top: 5%;
+}
+
+#title{
+	color:white; 
+	margin-bottom: 0;
+	margin-left:3%;
+}
+
+nav{
+	height:10%;
+	background-color: rgba(34,34,34,0.8);
+}
+
+nav.navbar {
+	margin-bottom: 0.3%;
+}
+
+#subNav{
+	margin-right: 5%;
+	float:right;
+	margin-bottom: 0.3%;
+}
+
+#switch{
+	text-decoration: underline;
+	color:blue;
+}
+
+#footer{
+	background-color: rgba(34,34,34,0.9);
+	position:fixed;
+	bottom:0;
+	height:6%;
+	width:100%;
+}
+
+#right_footer {
+	color: white;
+	font-size: 15px;
+	display: inline-block;
+	text-align: right;
+	margin-right:1%;
+	float:right;
+	padding-right: 20px;
+}
+
+#left_footer {
+	font-size: 15px;
+	color:white;
+	margin-left: 1%;
+	display:inline-block;
+}
+
+#login, #register{
+	display: inline-block;
+	width:35%;
+	vertical-align: top;
+	margin-top: 2%;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+.input{
+	line-height: 30px;
+	width:40%;
+	margin-bottom: 20px;
+}
+
+#name_form{
+	margin-left: 5%;
+}

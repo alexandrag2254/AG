@@ -1,0 +1,89 @@
+<div ng-controller="loginController">
+
+	<div class='row' id='register'>
+		<h4 class="center">Student Registation</h4>
+
+		<h5 ng-bind="errors_register" style="color:red;"></h5>
+
+	    <div class="input-field col s6">
+			<i class="material-icons prefix">account_circle</i>
+			<input class="input" placeholder="Name" id='uname' type="text" ng-model="register.name">
+		</div>
+
+		<div class="input-field col s6">
+		   	<i class="material-icons prefix">email</i>
+			<input class="input" placeholder="Email" id='unemail' type="text" ng-model="register.email" ng-minlength="5" required>
+		</div>
+
+		<div class="input-field col s6">
+			<i class="material-icons prefix">lock</i>
+			<input class="input" placeholder="Password" id='upass' type="password" ng-model="register.password" ng-minlength="5" required>
+		</div>
+
+		   <div class="input-field col s6">
+			<i class="material-icons prefix">lock</i>
+			<input class="input" placeholder="Confirm Password" id='upass' type="password" ng-model="register.password2" ng-minlength="5" required >
+		</div>
+
+		   <div class="input-field col s6">
+			<button ng-click="Register()" class="btn waves-effect waves-light green" type="submit" name="action"><i class="material-icons left">send</i></button>
+		</div>
+
+	</div>
+
+
+	<div id="login">
+
+		<div class="row" id="student_login">
+
+				<h4 class="center">Student Login</h4>
+
+				<h5 ng-bind="errors_studentlogin" style="color:red;"></h5>
+
+			<div class="input-field col s12 m6 l3">	
+
+				<i class="material-icons prefix">account_circle</i>
+				<input class="input" placeholder="Name" id='uname' type="text" ng-model="student.name">
+			</div>
+
+			<div class="input-field col s12 m6 l3">
+				<i class="material-icons prefix">lock</i>
+				<input class="input" id='upass' placeholder="Password" type="password" ng-model="student.password">
+			</div>
+
+			<div class="input-field col s12 m6 l3">
+				<button ng-click="studentLogin()" class="btn waves-effect waves-light green" type="submit" name="action"><i class="material-icons left">send</i></button>
+			</div>
+
+			<!-- <span id="switch" ng-click="admin()"> Admin Login </span> -->
+		</div>
+
+
+
+		<div class="row" id="admin_login">
+
+				<h4 class="center">Admin Login</h4>
+
+				<h5 ng-bind="errors_adminlogin" style="color:red;"></h5>
+
+			<div class="input-field col s12 m6 l3">	
+
+				<i class="material-icons prefix">account_circle</i>
+				<input class="input" placeholder="Name" id='uname' type="text" ng-model="admin.name">
+			</div>
+
+			<div class="input-field col s12 m6 l3">
+				<i class="material-icons prefix">lock</i>
+				<input class="input" id='upass' placeholder="Password" type="password" ng-model="admin.password">
+			</div>
+
+			<div class="input-field col s12 m6 l3">
+				<button ng-click="adminLogin()" class="btn waves-effect waves-light green" type="submit" name="action"><i class="material-icons left">send</i></button>
+			</div>
+		</div>
+
+</div> <!-- end of login column -->
+
+</div>
+
+

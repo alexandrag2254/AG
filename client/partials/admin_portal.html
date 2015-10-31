@@ -1,0 +1,52 @@
+<!-- admins shuold be able to add names for each cohort -->
+
+<!-- Create simple UI to enter in student names in a list  (Manju)
+4) Push button to add names as a TX (Manju)
+5) Show QR of the TX (Manju)
+6) Build page of QR codes per Cohort (Manju)
+7)  implement on blockchainU.co e.g. blockchainU.co/certificates  -->
+
+<!-- Group cohort certificates of participation
+individual certs of participation
+individual certs of accomplishment
+Certified developer 101, 102, 201, 202
+Expert 101 etc -->
+
+
+<div ng-Controller="adminController">
+
+	<ul id="subNav" class="nav nav-pills">
+	  <li><a role="presentation" ng-click="subPage='section1/subpage1.htm'">Add Course</a></li>
+	  <!-- <li><a role="presentation" ng-click="subPage='section1/subpage1.htm'">Transaction History</a></li> -->
+	</ul>
+	<ng-include src="subPage"></ng-include>
+
+	<hr style="width:100%">
+
+	<!-- <ul id="subNav" class="nav nav-pills">
+	  <li><a role="presentation" ng-click="subPage='section1/subpage1.htm'">Add Certifications</a></li>
+	  <li><a role="presentation" ng-click="subPage='section1/subpage2.htm'">Transactions</a></li>  -->
+	  <!-- with QR codes for each transaction -->
+	  <!-- <li><a role="presentation" ng-click="subPage='section1/subpage3.htm'">Add Transaction</a></li> -->
+	<!-- </ul> -->
+
+<!-- 	<form id="name_form" class="multi-field">
+		<label>Name of Course or Course ID #</label><br>
+		<input type="text" name="stuff[]"><br>
+		<button  class="add-field">+</button>
+	</form> -->
+
+	<form id="name_form" method="post" action="https://tierion.com/form/submit" class="multi-field">
+	    <input name="_key" type="hidden" value="QyRmiQtEMhyNGGf72c64YA">
+	    <input name="_redirecturl" type="hidden" value="http://tps.net/contact/thankyou">
+	    <label>Course ID #</label><br>
+	    <input name="course_id" type="text"><br>
+	    <input name="firstname" type="text">
+	    <input name="lastname" type="text">
+	    <button  class="add-field">+</button>
+    <button type="submit">Submit</button>
+</form>
+
+
+</div>
+
